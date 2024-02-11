@@ -1,0 +1,197 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>节目单</title>  
+<style>
+@font-face {  
+    font-family: 'font'; /* 自定义的字体名称 */  
+    src: url('font.ttf') format('truetype'); /* 字体文件的路径和格式 */  
+}
+  body, html {  
+    margin: 0;  
+    padding: 0;  
+    height: 100%;  
+    overflow: hidden;  
+  }  
+  
+  #lyrics-container {  
+    width: 100%;  
+    height: 100vh;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    font-family: Arial, sans-serif;  
+    font-size: 20px;  
+    overflow-y: scroll;  
+    scroll-behavior: smooth;  
+  }  
+  
+  .lyric-line {
+    font-size: 80px; /* 设置字体大小为80px */  
+    font-family: 'font', sans-serif; /* 设置字体为黑体，如果系统没有黑体则使用无衬线字体 */ 
+    line-height: 130px; /* 设置行距为20px */     
+    text-align: center;  
+    transition: color 0.5s;  
+  }  
+  
+  .lyric-line.active {  
+    color: #333; /* 中间文本颜色较深 */  
+  }  
+  
+  .lyric-line.before,  
+  .lyric-line.after {  
+    color: #999; /* 上下文本颜色较浅 */  
+  }  
+</style>  
+</head>  
+<body>  
+  
+<div id="lyrics-container">  
+  <!-- 在这里输入你的歌词，每行歌词用<div>标签包裹，并添加lyric-line类 -->  
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>  
+  <div class="lyric-line">2</div>  
+  <div class="lyric-line">3</div>  
+  <div class="lyric-line">4</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">1</div>
+  <div class="lyric-line">短片·我们的春晚</div>  
+  <div class="lyric-line">开场·鼓舞龙腾</div>  
+  <div class="lyric-line">歌曲·嘿 少年</div>  
+  <div class="lyric-line">相声·我要不一样</div>  
+  <div class="lyric-line">创意年俗秀·别开生面</div>  
+  <div class="lyric-line">中国传统纹样创演秀·年锦</div>  
+  <div class="lyric-line">小品·那能一样吗</div>  
+  <div class="lyric-line">陕西西安分会场节目·山河诗长安</div>  
+  <div class="lyric-line">舞蹈·锦鲤</div>  
+  <div class="lyric-line">歌曲·像你这样的朋友</div>  
+  <div class="lyric-line">公益广告一·中华一家人</div>  
+  <div class="lyric-line">魔术·守岁共此时</div>  
+  <div class="lyric-line">歌曲·健康到到令</div>  
+  <div class="lyric-line">相声·导演的“心事”</div>  
+  <div class="lyric-line">歌咏·如果要写年</div>  
+  <div class="lyric-line">合唱·看动画片的我们长大了</div>  
+  <div class="lyric-line">辽宁沈阳分会场节目·冬日暖阳</div>  
+  <div class="lyric-line">歌曲·不如见一面</div>  
+  <div class="lyric-line">小品·开不了口</div>  
+  <div class="lyric-line">歌曲·拼音</div>  
+  <div class="lyric-line">公益广告二·中国式浪漫</div>  
+  <div class="lyric-line">戏曲·百花争艳</div>  
+  <div class="lyric-line">小品·寒舍不寒</div>  
+  <div class="lyric-line">歌曲·枕着光的她</div>  
+  <div class="lyric-line">舞蹈·鹅鹅鹅</div>  
+  <div class="lyric-line">歌曲·上春山</div>  
+  <div class="lyric-line">新疆喀什分会场节目·舞乐新疆</div>  
+  <div class="lyric-line">小品·咱家来客了</div>  
+  <div class="lyric-line">功夫微电影·争春</div>  
+  <div class="lyric-line">舞剧·《咏春》选段</div>  
+  <div class="lyric-line">歌曲·永恒的诗篇</div>  
+  <div class="lyric-line">公益广告三·龙的传人</div>  
+  <div class="lyric-line">歌曲·龙</div>  
+  <div class="lyric-line">歌曲·礼序</div>  
+  <div class="lyric-line">歌曲·晒share</div>  
+  <div class="lyric-line">军歌·决胜</div>  
+  <div class="lyric-line">歌曲·无我</div>  
+  <div class="lyric-line">湖南长沙分会场节目·都实现</div>  
+  <div class="lyric-line">歌曲·让幸福飞起来</div>  
+  <div class="lyric-line">杂技·跃龙门</div>  
+  <div class="lyric-line">歌曲·美人</div>  
+  <div class="lyric-line">民歌串烧·我的家乡我的歌</div>  
+  <div class="lyric-line">舞蹈·瓷影</div>  
+  <div class="lyric-line">歌曲·为了美好</div>  
+  <div class="lyric-line">流行劲曲串烧</div>  
+  <div class="lyric-line">歌曲·难忘今宵</div>  
+</div>  
+  
+<script>  
+  const lyricsContainer = document.getElementById('lyrics-container');  
+  const lyricLines = Array.from(lyricsContainer.getElementsByClassName('lyric-line'));  
+  let activeIndex = Math.floor(lyricLines.length / 2);  
+  
+  function updateActiveLine() {  
+    lyricLines.forEach((line, index) => {  
+      line.classList.remove('before', 'active', 'after');  
+      if (index < activeIndex) {  
+        line.classList.add('before');  
+      } else if (index === activeIndex) {  
+        line.classList.add('active');  
+      } else {  
+        line.classList.add('after');  
+      }  
+    });  
+  }  
+  
+  function scrollLyrics(event) {  
+    event.preventDefault();  
+    if (event.deltaY < 0 && activeIndex > 0) {  
+      activeIndex--;  
+    } else if (event.deltaY > 0 && activeIndex < lyricLines.length - 1) {  
+      activeIndex++;  
+    }  
+    updateActiveLine();  
+    lyricsContainer.scrollTo({  
+      top: lyricLines[activeIndex].offsetTop - lyricsContainer.offsetHeight / 2 + lyricLines[activeIndex].offsetHeight / 2,  
+      behavior: 'smooth'  
+    });  
+  }  
+  
+  lyricsContainer.addEventListener('wheel', scrollLyrics);  
+  
+  // 初始化歌词显示  
+  updateActiveLine();  
+</script>  
+  
+</body>  
+</html>

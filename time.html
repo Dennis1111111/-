@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>时间显示</title>  
+    <style>  
+        html, body {  
+            height: 100%;  
+            margin: 0;  
+            padding: 0;  
+            overflow: hidden;  
+        }  
+        body {  
+            font-family: Arial, sans-serif;  
+            display: flex;  
+            flex-direction: column;  
+            justify-content: center;  
+            align-items: center;  
+            background-color: #FFFFFF;  
+        }  
+        .time-container {  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+        #time-hours-minutes {  
+            font-size: 280px; /* 调整字体大小以适应屏幕 */  
+            font-weight: bold;  
+            margin: 0;  
+            padding: 0;  
+        }  
+        #time-seconds {  
+            font-size: 100px; /* 秒的字体稍小一些 */  
+            font-weight: bold;  
+            margin-top: 10px; /* 添加一些间距 */  
+        }  
+        /* 针对700x900屏幕的调整，可能需要根据实际情况微调 */  
+        @media screen and (width: 700px) and (height: 900px) {  
+            body {  
+                /* 根据需要调整字体大小和间距以达到最佳显示效果 */  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="time-container">  
+        <p id="time-hours-minutes"></p>  
+        <p id="time-seconds"></p>  
+    </div>  
+  
+    <script>  
+        function showTime() {  
+            var date = new Date();  
+            var hours = String(date.getHours()).padStart(2, '0');  
+            var minutes = String(date.getMinutes()).padStart(2, '0');  
+            var seconds = String(date.getSeconds()).padStart(2, '0');  
+            document.getElementById("time-hours-minutes").textContent = hours + ":" + minutes;  
+            document.getElementById("time-seconds").textContent = seconds;  
+            setTimeout(showTime, 1000); // 每秒更新一次时间  
+        }  
+        showTime(); // 调用函数显示初始时间  
+    </script>  
+</body>  
+</html>
