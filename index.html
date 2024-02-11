@@ -30,9 +30,9 @@
   }  
   
   .lyric-line {
-    font-size: 80px; /* 设置字体大小为80px */  
-    font-family: 'font', sans-serif; /* 设置字体为黑体，如果系统没有黑体则使用无衬线字体 */ 
-    line-height: 130px; /* 设置行距为20px */     
+    font-size: 80px; /* 设置字体大小 */  
+    font-family: 'font', sans-serif; /* 设置字体 */ 
+    line-height: 130px; /* 设置行距 */     
     text-align: center;  
     transition: color 0.5s;  
   }  
@@ -50,7 +50,7 @@
 <body>  
   
 <div id="lyrics-container">  
-  <!-- 在这里输入你的歌词，每行歌词用<div>标签包裹，并添加lyric-line类 -->  
+  <!-- 在这里输入你的节目，每行歌词用<div>标签包裹，并添加lyric-line类，前面的1是占位符 -->  
   <div class="lyric-line">1</div>
   <div class="lyric-line">1</div>
   <div class="lyric-line">1</div>
@@ -189,7 +189,7 @@
   
   lyricsContainer.addEventListener('wheel', scrollLyrics);  
   
-  // 初始化歌词显示  
+  // 初始化显示  
   updateActiveLine();  
 </script>  
   
